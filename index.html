@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@100;200;600;700;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Registration Form</h2>
+        <div id="error_message"></div>
+        <form id="myform" onsubmit="return validation()">
+            <div class="input_filed">
+            <input type="text" placeholder="Name" id="name">
+            </div>
+            
+            <div class="input_filed">
+            <input type="email" placeholder="Email" id="email">
+            </div>
+
+            <div class="input_filed">
+            <input type="phone" placeholder="Phone Number" id="phone">
+            </div>
+
+            <div class="input_filed">
+            <input type="password" placeholder="Password" id="password">
+            </div>
+
+            <div class="input_filed">
+            <input type="password" placeholder="Confirm Password" id="cpassword">
+            </div>
+        
+            <div class="btn">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
