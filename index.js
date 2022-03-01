@@ -1,4 +1,21 @@
+function Welcomewill()
+{
+	var will=prompt("Here is the registration page! Are you ready ","Ready");
+	if(will=='')
+	{
+		alert("Write Ready to start");
+		Welcomewill();
+	}
+	
+}
+
 function validation(){
+	
+	var will=prompt("Do you want to register ","y/n");
+	if(will=='y')
+		return true;
+	else
+		return false;
     var name = document.getElementById('name').value;
     var email= document.getElementById('email').value;
     var phone = document.getElementById('phone').value;
@@ -32,16 +49,12 @@ if(password.length<5){
     error_message.innerHTML = text;
     return false;
 }
-if(cpassword.length<5){
+if(cpassword.length!=password.length || cpassword!=password){
     text = "Please check the password";
     error_message.innerHTML = text;
     return false;
 }
-if(cpassword!=password){
-    text = "Please Enter correct password";
-    error_message.innerHTML = text;
-    return false;
-}
-swal("Good job!", "You clicked the button!", "success");
+
+alert("Good job!");
 return true;
 }
